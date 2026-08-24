@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop All Sneakers — Running, Basketball & Lifestyle | SoleVault</title>
+  <meta name="description" content="Browse 12+ authentic sneakers at SoleVault. Search by name, filter by brand or category, compare prices, ratings and available sizes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <nav class="nav__inner" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">S</span>
+        <span class="brand__name">Sole<span>Vault</span></span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="payment.html">Checkout</a></li>
+      </ul>
+      <a class="nav__cart" href="cart.html">🛒 Cart <span class="cart-count" data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <section class="page-head">
+    <div class="wrap">
+      <h1>All Sneakers</h1>
+      <p class="crumbs"><a href="index.html">Home</a> / Products</p>
+    </div>
+  </section>
+
+  <main class="section">
+    <div class="wrap">
+      <!-- Search + filters -->
+      <div class="toolbar">
+        <label class="search">
+          <span aria-hidden="true">🔍</span>
+          <input type="search" id="searchInput" placeholder="Search sneakers, brands, categories…" aria-label="Search sneakers" />
+        </label>
+        <select class="chip" id="categorySelect" aria-label="Filter by category"></select>
+        <span class="meta" id="resultCount"></span>
+      </div>
+      <div class="chips" id="brandChips" style="margin-bottom:28px" role="group" aria-label="Filter by brand"></div>
+
+      <!-- Product grid (rendered by js/products.js) -->
+      <div class="grid grid--4" id="productGrid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand__mark">S</span>
+          <span class="brand__name" style="color:#fff">Sole<span>Vault</span></span>
+        </a>
+        <p style="margin-top:14px;max-width:34ch">Premium, authenticity-verified sneakers delivered to your door.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Twitter">X</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div>
+        <h4>SHOP</h4>
+        <ul>
+          <li><a href="products.html?category=Running">Running</a></li>
+          <li><a href="products.html?category=Basketball">Basketball</a></li>
+          <li><a href="products.html?category=Lifestyle">Lifestyle</a></li>
+          <li><a href="products.html?category=Outdoor">Outdoor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>ACCOUNT</h4>
+        <ul>
+          <li><a href="cart.html">My Cart</a></li>
+          <li><a href="payment.html">Checkout</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">Shipping &amp; Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Contact Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <span>© 2026 SoleVault. All rights reserved.</span>
+      <span>Made for a college project · Vanilla HTML, CSS &amp; JS</span>
+    </div>
+  </footer>
+
+  <script src="js/products.js" defer></script>
+  <script src="js/cart.js" defer></script>
+</body>
+</html>
