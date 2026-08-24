@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoleVault — Premium Sneakers, Curated Drops & Fast Delivery</title>
+  <meta name="description" content="Shop authentic premium sneakers at SoleVault. Limited drops, running, basketball and lifestyle silhouettes with free shipping and easy 7-day returns." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== Navigation ===== -->
+  <header class="nav">
+    <nav class="nav__inner" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">S</span>
+        <span class="brand__name">Sole<span>Vault</span></span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav__links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="payment.html">Checkout</a></li>
+      </ul>
+      <a class="nav__cart" href="cart.html">🛒 Cart <span class="cart-count" data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div>
+          <span class="eyebrow">New season drop · 2026</span>
+          <h1>Step into <em>legendary</em> sneakers.</h1>
+          <p>Authenticity-checked kicks from the world's best brands. Curated drops, honest pricing, and delivery in 48 hours.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="products.html">Shop the collection</a>
+            <a class="btn btn--ghost" href="#featured" style="color:#fff">View featured</a>
+          </div>
+          <div class="hero__stats">
+            <div><strong>120+</strong><span>Styles</span></div>
+            <div><strong>48h</strong><span>Delivery</span></div>
+            <div><strong>4.8★</strong><span>12k reviews</span></div>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img src="images/sneakers/hero.jpg" alt="Premium white and orange high-top sneaker" width="1600" height="1104" />
+          <span class="hero__badge">100% Authentic Guarantee</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="strip">
+      <div class="strip__track">
+        <span>Free shipping over ₹9,999</span><span>·</span><span>7-day easy returns</span><span>·</span>
+        <span>Authenticity verified</span><span>·</span><span>Free shipping over ₹9,999</span><span>·</span>
+        <span>7-day easy returns</span><span>·</span><span>Authenticity verified</span>
+      </div>
+    </div>
+
+    <!-- ===== Featured collection ===== -->
+    <section class="section" id="featured">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Featured collection</span>
+          <h2>Fresh on the shelf</h2>
+          <p>Hand-picked silhouettes our community is obsessing over this week.</p>
+        </div>
+        <div class="grid grid--4" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== Categories / brands ===== -->
+    <section class="section section--alt">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Shop by category</span>
+          <h2>Find your fit</h2>
+        </div>
+        <div class="grid grid--4">
+          <a class="cat" href="products.html?category=Running"><span>Everyday miles</span><h3>Running</h3></a>
+          <a class="cat" href="products.html?category=Basketball"><span>Court ready</span><h3>Basketball</h3></a>
+          <a class="cat" href="products.html?category=Lifestyle"><span>Street style</span><h3>Lifestyle</h3></a>
+          <a class="cat" href="products.html?category=Outdoor"><span>Trail proof</span><h3>Outdoor</h3></a>
+        </div>
+        <div class="chips" style="margin-top:24px;justify-content:center">
+          <a class="chip" href="products.html?brand=Nike">Nike</a>
+          <a class="chip" href="products.html?brand=Adidas">Adidas</a>
+          <a class="chip" href="products.html?brand=Jordan">Jordan</a>
+          <a class="chip" href="products.html?brand=Puma">Puma</a>
+          <a class="chip" href="products.html?brand=New Balance">New Balance</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Popular products ===== -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Popular right now</span>
+          <h2>Top rated pairs</h2>
+          <p>Ranked by verified customer ratings across all categories.</p>
+        </div>
+        <div class="grid grid--4" id="popularGrid"></div>
+        <div style="text-align:center;margin-top:32px">
+          <a class="btn btn--dark" href="products.html">Browse all sneakers</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Promotional banner ===== -->
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="promo">
+          <div>
+            <span class="eyebrow" style="color:var(--gold)">Limited time</span>
+            <h2>Flat 25% off on the season sale</h2>
+            <p>Use code <strong>SOLE25</strong> at checkout. Ends this Sunday, while stock lasts.</p>
+          </div>
+          <a class="btn btn--light" href="products.html">Grab the deal</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Why choose us ===== -->
+    <section class="section section--alt">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Why SoleVault</span>
+          <h2>Built for sneakerheads</h2>
+        </div>
+        <div class="grid grid--4">
+          <div class="tile"><div class="tile__icon">✓</div><h3>100% Authentic</h3><p>Every pair passes a 9-point legit check before it ships.</p></div>
+          <div class="tile"><div class="tile__icon">⚡</div><h3>48h Delivery</h3><p>Same-day dispatch from local warehouses across the country.</p></div>
+          <div class="tile"><div class="tile__icon">↺</div><h3>Easy Returns</h3><p>Changed your mind? Free returns within 7 days, no questions.</p></div>
+          <div class="tile"><div class="tile__icon">🔒</div><h3>Secure Payments</h3><p>Encrypted checkout with cards, UPI and net banking support.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Customer love</span>
+          <h2>What our buyers say</h2>
+        </div>
+        <div class="grid grid--3">
+          <blockquote class="tile">
+            <div class="rating"><span class="stars">★★★★★</span> 5.0</div>
+            <p class="quote">"Ordered the Court Legend High on Friday and it arrived Sunday morning. Packaging was premium and the pair is 100% legit."</p>
+            <div class="who"><div class="avatar">A</div><div><strong>Aditya R.</strong><small>Mumbai</small></div></div>
+          </blockquote>
+          <blockquote class="tile">
+            <div class="rating"><span class="stars">★★★★★</span> 4.8</div>
+            <p class="quote">"Sizing guide was spot on and the return process for my second pair took two minutes. Easily my go-to sneaker store now."</p>
+            <div class="who"><div class="avatar">S</div><div><strong>Sneha P.</strong><small>Bengaluru</small></div></div>
+          </blockquote>
+          <blockquote class="tile">
+            <div class="rating"><span class="stars">★★★★☆</span> 4.5</div>
+            <p class="quote">"Great prices on the running range. The Knit Flow Trainer feels much more expensive than what I paid for it."</p>
+            <div class="who"><div class="avatar">K</div><div><strong>Karan M.</strong><small>Delhi</small></div></div>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Newsletter ===== -->
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="news">
+          <span class="eyebrow" style="color:var(--gold)">Newsletter</span>
+          <h2>Never miss a drop</h2>
+          <p style="color:rgba(255,255,255,.72);margin-top:8px">Get early access to restocks and members-only discounts.</p>
+          <form id="newsForm" novalidate>
+            <input type="email" id="newsEmail" placeholder="you@example.com" aria-label="Email address" />
+            <button class="btn btn--primary" type="submit">Subscribe</button>
+          </form>
+          <p class="news__note" id="newsNote"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand__mark">S</span>
+          <span class="brand__name" style="color:#fff">Sole<span>Vault</span></span>
+        </a>
+        <p style="margin-top:14px;max-width:34ch">Premium, authenticity-verified sneakers delivered to your door.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Twitter">X</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div>
+        <h4>SHOP</h4>
+        <ul>
+          <li><a href="products.html?category=Running">Running</a></li>
+          <li><a href="products.html?category=Basketball">Basketball</a></li>
+          <li><a href="products.html?category=Lifestyle">Lifestyle</a></li>
+          <li><a href="products.html?category=Outdoor">Outdoor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>ACCOUNT</h4>
+        <ul>
+          <li><a href="cart.html">My Cart</a></li>
+          <li><a href="payment.html">Checkout</a></li>
+          <li><a href="products.html">All Products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#">Shipping &amp; Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Contact Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <span>© 2026 SoleVault. All rights reserved.</span>
+      <span>Made for a college project · Vanilla HTML, CSS &amp; JS</span>
+    </div>
+  </footer>
+
+  <script src="js/products.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script defer>
+    // Newsletter subscription (simple email format check)
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("newsForm");
+      const email = document.getElementById("newsEmail");
+      const note = document.getElementById("newsNote");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const valid = /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/.test(email.value.trim());
+        note.textContent = valid ? "You're on the list — welcome to the vault!" : "Please enter a valid email address.";
+        note.style.color = valid ? "var(--gold)" : "#ff9a9a";
+        if (valid) form.reset();
+      });
+    });
+  </script>
+</body>
+</html>
